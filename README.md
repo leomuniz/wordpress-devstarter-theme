@@ -1,6 +1,11 @@
 # WordPress Dev Starter Theme
 This theme was made from the Twenty Twenty official WP theme by the WordPress team. It's meant to be a slim starter theme for developers with the most relevant features present in most sites. Feel free to use it, modified, suggest changes or help improving it.
 
+## Quick-start
+- Define basic settings on the `functions.php`
+- Run `gulp watch` on the theme root folder. 
+- Define layout settings on `/scss/partials/_variables.scss`.
+
 ## Features
 - CSS-only responsive menu.
 - `gulpfile.js` configured to generate CSS files from SCSS and to minify both CSS and JS files.
