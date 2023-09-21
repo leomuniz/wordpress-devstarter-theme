@@ -51,3 +51,16 @@ In the `/scss/partials/_variables.scss` there are some important layout settings
 - Add more basic layout settings on `/scss/partials/_variables.scss`
 - Fix the Gutenberg WYSIWYG preview 
 - Add a basic Gutenberg react block as a template block
+
+
+##  Alternatives
+If this theme doesn't fit your needs, you might try some alternatives:
+
+- https://underscores.me/
+- https://wordpress.org/themes/generic/
+- https://wordpress.org/themes/wp-bootstrap-starter/ (Underscores + Bootstrap 4 + FontAwesome)
+- https://wordpress.org/themes/understrap/ (Underscores + Bootstrap)
+- https://wordpress.org/themes/catch-starter/
+- https://wordpress.org/themes/air-light/
+- https://roots.io/sage/ (Tailwind CSS and Laravel Blade)
+- https://quarktheme.com/
