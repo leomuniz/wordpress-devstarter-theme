@@ -1,5 +1,5 @@
 # WordPress Dev Starter Theme
-This theme was made from the Twenty Twenty official WP theme by the WordPress team. It's meant to be a slim starter theme for developers with the most relevant features present in most sites. Feel free to use it, modified, suggest changes or help improving it.
+This theme was made from the Twenty Twenty official WP theme by the WordPress team. I implemented it to use it as a starter theme to my own projects. It's meant to be a slim theme for developers with the most relevant features present in most sites. Feel free to use it, modified, suggest changes or help improving it.
 
 ## Quick-start
 - Define basic settings on the `functions.php`
@@ -46,3 +46,8 @@ Go to functions.php and define some basic settings of your theme:
 ## Basic SCSS variables to customize the layout.
 In the `/scss/partials/_variables.scss` there are some important layout settings, like the site width, the background color, the primary and secondary color.
    
+## Roadmap
+- Enable classic editor (not working)
+- Add more basic layout settings on `/scss/partials/_variables.scss`
+- Fix the Gutenberg WYSIWYG preview 
+- Add a basic Gutenberg react block as a template block
