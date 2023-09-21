@@ -3,8 +3,8 @@
  * Displays the content when the cover template is used.
  *
  * @package WordPress
- * @subpackage Twenty_Twenty
- * @since Twenty Twenty 1.0
+ * @subpackage Dev_Starter
+ * @since Dev Starter 1.0
  */
 
 ?>
@@ -18,7 +18,7 @@
 	$color_overlay_style   = '';
 	$color_overlay_classes = '';
 
-	$image_url = ! post_password_required() ? get_the_post_thumbnail_url( get_the_ID(), 'twentytwenty-fullscreen' ) : '';
+	$image_url = ! post_password_required() ? get_the_post_thumbnail_url( get_the_ID(), 'devstarter-fullscreen' ) : '';
 
 	if ( $image_url ) {
 		$cover_header_style   = ' style="background-image: url( ' . esc_url( $image_url ) . ' );"';
@@ -57,11 +57,11 @@
 							/**
 							 * Allow child themes and plugins to filter the display of the categories in the article header.
 							 *
-							 * @since Twenty Twenty 1.0
+							 * @since Dev Starter 1.0
 							 *
 							 * @param bool Whether to show the categories in article header. Default true.
 							 */
-							$show_categories = apply_filters( 'twentytwenty_show_categories_in_entry_header', true );
+							$show_categories = apply_filters( 'devstarter_show_categories_in_entry_header', true );
 
 							if ( true === $show_categories && has_category() ) {
 								?>
@@ -70,7 +70,7 @@
 									<span class="screen-reader-text">
 										<?php
 										/* translators: Hidden accessibility text. */
-										_e( 'Categories', 'twentytwenty' );
+										_e( 'Categories', 'devstarter' );
 										?>
 									</span>
 									<div class="entry-categories-inner">
@@ -89,11 +89,11 @@
 								<div class="to-the-content-wrapper">
 
 									<a href="#post-inner" class="to-the-content fill-children-current-color">
-										<?php twentytwenty_the_theme_svg( 'arrow-down' ); ?>
+										<?php devstarter_the_theme_svg( 'arrow-down' ); ?>
 										<div class="screen-reader-text">
 											<?php
 											/* translators: Hidden accessibility text. */
-											_e( 'Scroll Down', 'twentytwenty' );
+											_e( 'Scroll Down', 'devstarter' );
 											?>
 										</div>
 									</a><!-- .to-the-content -->
@@ -121,7 +121,7 @@
 									<?php
 								}
 
-								twentytwenty_the_post_meta( get_the_ID(), 'single-top' );
+								devstarter_the_post_meta( get_the_ID(), 'single-top' );
 
 							}
 							?>
@@ -145,7 +145,7 @@
 		<?php
 		wp_link_pages(
 			array(
-				'before'      => '<nav class="post-nav-links bg-light-background" aria-label="' . esc_attr__( 'Page', 'twentytwenty' ) . '"><span class="label">' . __( 'Pages:', 'twentytwenty' ) . '</span>',
+				'before'      => '<nav class="post-nav-links bg-light-background" aria-label="' . esc_attr__( 'Page', 'devstarter' ) . '"><span class="label">' . __( 'Pages:', 'devstarter' ) . '</span>',
 				'after'       => '</nav>',
 				'link_before' => '<span class="page-number">',
 				'link_after'  => '</span>',
@@ -154,7 +154,7 @@
 
 		edit_post_link();
 		// Single bottom post meta.
-		twentytwenty_the_post_meta( get_the_ID(), 'single-bottom' );
+		devstarter_the_post_meta( get_the_ID(), 'single-bottom' );
 
 		if ( post_type_supports( get_post_type( get_the_ID() ), 'author' ) && is_single() ) {
 

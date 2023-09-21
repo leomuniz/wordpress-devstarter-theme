@@ -3,33 +3,33 @@
  * Menus registration
  *
  * @package WordPress
- * @subpackage Twenty_Twenty
- * @since Twenty Twenty 1.0
+ * @subpackage Dev_Starter
+ * @since Dev Starter 1.0
  */
 
 /**
  * Register navigation menus uses wp_nav_menu in five places.
  *
- * @since Twenty Twenty 1.0
+ * @since Dev Starter 1.0
  */
-function twentytwenty_menus() {
+function devstarter_menus() {
 
 	$locations = array(
-		'primary'  => __( 'Primary Menu', 'twentytwenty' ),
-		'logged'   => __( 'Logged-in Menu', 'twentytwenty' ),
-		'footer'   => __( 'Footer Menu', 'twentytwenty' ),
-		'social'   => __( 'Social Menu', 'twentytwenty' ),
+		'primary'  => __( 'Primary Menu', 'devstarter' ),
+		'logged'   => __( 'Logged-in Menu', 'devstarter' ),
+		'footer'   => __( 'Footer Menu', 'devstarter' ),
+		'social'   => __( 'Social Menu', 'devstarter' ),
 	);
 
 	register_nav_menus( $locations );
 }
 
-add_action( 'init', 'twentytwenty_menus' );
+add_action( 'init', 'devstarter_menus' );
 
 /**
  * Replaces the default nav menu walker to add a label and a checkbox to display the submenu on the mobile menu.
  *
- * @since Twenty Twenty 1.0
+ * @since Dev Starter 1.0
  */
 class Walker_SubMenu_Modifier extends Walker_Nav_Menu {
 
@@ -79,7 +79,7 @@ class Walker_SubMenu_Modifier extends Walker_Nav_Menu {
 		$atts       = apply_filters( 'nav_menu_submenu_attributes', $atts, $args, $depth );
 		$attributes = $this->build_atts( $atts );
 	
-		$output .= "{$n}{$indent}<label class=\"chevron-down-mobile-submenu\" for=\"check-sub-" . $this->current_item->ID . "\">" . TwentyTwenty_SVG_Icons::get_svg( 'chevron-down' ) . "</label>";
+		$output .= "{$n}{$indent}<label class=\"chevron-down-mobile-submenu\" for=\"check-sub-" . $this->current_item->ID . "\">" . DevStarter_SVG_Icons::get_svg( 'chevron-down' ) . "</label>";
 		$output .= "{$n}{$indent}<input type=\"checkbox\" id=\"check-sub-" . $this->current_item->ID . "\" class=\"submenu-checkbox-for-mobile\">";
 		$output .= "{$n}{$indent}<ul{$attributes}>{$n}";
 		

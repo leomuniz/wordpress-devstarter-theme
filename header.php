@@ -1,12 +1,12 @@
 <?php
 /**
- * Header file for the Twenty Twenty WordPress default theme.
+ * Header file for the Dev Starter WordPress default theme.
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package WordPress
- * @subpackage Twenty_Twenty
- * @since Twenty Twenty 1.0
+ * @subpackage Dev_Starter
+ * @since Dev Starter 1.0
  */
 
 ?><!DOCTYPE html>
@@ -39,10 +39,10 @@
 					<div class="header-titles">
 						<?php
 							// Site title or logo.
-							twentytwenty_site_logo();
+							devstarter_site_logo();
 
 							if ( DISPLAY_DESCRIPTION ) {
-								twentytwenty_site_description();
+								devstarter_site_description();
 							}
 						?>
 
@@ -51,7 +51,7 @@
 				</div><!-- .header-titles-wrapper -->
 
 				<div class="header-navigation-mobile-menu-toggle">
-					<label class="toggle-mobile-menu" for="mobile-toggle"><?php twentytwenty_the_theme_svg( 'sandwich' ); ?></label>
+					<label class="toggle-mobile-menu" for="mobile-toggle"><?php devstarter_the_theme_svg( 'sandwich' ); ?></label>
 				</div>
 
 				<div class="header-navigation-wrapper">
@@ -60,7 +60,7 @@
 					<?php
 					if ( has_nav_menu( 'primary' ) ) {
 						?>
-							<nav class="primary-menu-wrapper" aria-label="<?php echo esc_attr_x( 'Horizontal', 'menu', 'twentytwenty' ); ?>">
+							<nav class="primary-menu-wrapper" aria-label="<?php echo esc_attr_x( 'Horizontal', 'menu', 'devstarter' ); ?>">
 								<ul class="primary-menu reset-list-style">
 									<?php
 										wp_nav_menu(

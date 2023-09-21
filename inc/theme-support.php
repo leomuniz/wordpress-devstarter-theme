@@ -3,8 +3,8 @@
  * Theme features.
  *
  * @package WordPress
- * @subpackage Twenty_Twenty
- * @since Twenty Twenty 1.0
+ * @subpackage Dev_Starter
+ * @since Dev Starter 1.0
  */
 
 /**
@@ -14,9 +14,9 @@
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  *
- * @since Twenty Twenty 1.0
+ * @since Dev Starter 1.0
  */
-function twentytwenty_theme_support() {
+function devstarter_theme_support() {
 
 	// Add default posts and comments RSS feed links to head => <link rel="alternate" href=""> 
 	add_theme_support( 'automatic-feed-links' );
@@ -36,7 +36,7 @@ function twentytwenty_theme_support() {
 	);
 
 	// Add custom image size used in Cover Template.
-	add_image_size( 'twentytwenty-fullscreen', 1980, 9999 );
+	add_image_size( 'devstarter-fullscreen', 1980, 9999 );
 
 	/*
 	 * Let WordPress manage the document title.
@@ -66,10 +66,10 @@ function twentytwenty_theme_support() {
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
-	 * If you're building a theme based on Twenty Twenty, use a find and replace
-	 * to change 'twentytwenty' to the name of your theme in all the template files.
+	 * If you're building a theme based on Dev Starter, use a find and replace
+	 * to change 'devstarter' to the name of your theme in all the template files.
 	 */
-	load_theme_textdomain( 'twentytwenty' );
+	load_theme_textdomain( 'devstarter' );
 
 	/* Adds support for full and wide align images on Gutenberg blocks.
 	 * Gives to some blocks the possibility to define a “wide” or “full” alignment 
@@ -92,7 +92,7 @@ function twentytwenty_theme_support() {
 	 */
 	// if ( is_customize_preview() ) {
 	// 	require get_template_directory() . '/inc/starter-content.php';
-	// 	add_theme_support( 'starter-content', twentytwenty_get_starter_content() );
+	// 	add_theme_support( 'starter-content', devstarter_get_starter_content() );
 	// }
 
 	/* Add theme support for selective refresh for widgets. 
@@ -104,4 +104,4 @@ function twentytwenty_theme_support() {
 	add_theme_support( 'editor-styles' );
 
 }
-add_action( 'after_setup_theme', 'twentytwenty_theme_support' );
+add_action( 'after_setup_theme', 'devstarter_theme_support' );

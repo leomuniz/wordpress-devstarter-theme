@@ -1,4 +1,4 @@
-=== Twenty Twenty ===
+=== Dev Starter ===
 Contributors: the WordPress team
 Tested up to: 6.2
 Stable tag: 2.2
@@ -89,8 +89,8 @@ Initial release
 
 == Copyright ==
 
-Twenty Twenty WordPress Theme, Copyright 2019-2023 WordPress.org
-Twenty Twenty is distributed under the terms of the GNU GPL.
+Dev Starter WordPress Theme, Copyright 2019-2023 WordPress.org
+Dev Starter is distributed under the terms of the GNU GPL.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -102,10 +102,10 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
-Twenty Twenty is derived from the Chaplin Theme, Copyright 2019 Anders Norén
+Dev Starter is derived from the Chaplin Theme, Copyright 2019 Anders Norén
 Chaplin Theme is distributed under the terms of the GNU GPL version 2.0
 
-Twenty Twenty bundles the following third-party resources:
+Dev Starter bundles the following third-party resources:
 
 Illustrations by Tammie Lister
 License: Creative Commons Zero (CC0), https://creativecommons.org/publicdomain/zero/1.0/
@@ -115,7 +115,7 @@ Copyright (c) 2016-2019 The Inter Project Authors (me@rsms.me)
 License: SIL Open Font License, 1.1, https://opensource.org/licenses/OFL-1.1
 Source: https://rsms.me/inter/
 
-Bespoke Icons Created For Twenty Twenty
+Bespoke Icons Created For Dev Starter
 License: Creative Commons Zero (CC0), https://creativecommons.org/publicdomain/zero/1.0/
 List of bespoke icons:
 - Search icon
@@ -142,17 +142,17 @@ Copyright (c) 2018-2023 WordPress.org
 License: GPLv2
 Source: https://wordpress.org/themes/twentynineteen/
 Included as part of the following classes and functions:
-- TwentyTwenty_SVG_Icons
-- twentytwenty_the_theme_svg()
-- twentytwenty_get_theme_svg()
-- twentytwenty_nav_menu_social_icons()
+- DevStarter_SVG_Icons
+- devstarter_the_theme_svg()
+- devstarter_get_theme_svg()
+- devstarter_nav_menu_social_icons()
 
 Code from Twenty Seventeen
 Copyright (c) 2016-2023 WordPress.org
 License: GPLv2
 Source: https://wordpress.org/themes/twentyseventeen/
 Included as part of the following classes and functions:
-- twentytwenty_unique_id()
+- devstarter_unique_id()
 
 Underscores
 https://underscores.me/, (C) 2012-2023 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)

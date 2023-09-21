@@ -7,8 +7,8 @@
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package WordPress
- * @subpackage Twenty_Twenty
- * @since Twenty Twenty 1.0
+ * @subpackage Dev_Starter
+ * @since Dev Starter 1.0
  */
 
 ?>
@@ -22,7 +22,7 @@
 							<?php
 							echo date_i18n(
 								/* translators: Copyright date format, see https://www.php.net/manual/datetime.format.php */
-								_x( 'Y', 'copyright date format', 'twentytwenty' )
+								_x( 'Y', 'copyright date format', 'devstarter' )
 							);
 							?>
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
@@ -35,8 +35,8 @@
 						?>
 
 						<p class="powered-by-wordpress">
-							<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'twentytwenty' ) ); ?>">
-								<?php _e( 'Powered by WordPress', 'twentytwenty' ); ?>
+							<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'devstarter' ) ); ?>">
+								<?php _e( 'Powered by WordPress', 'devstarter' ); ?>
 							</a>
 						</p><!-- .powered-by-wordpress -->
 
@@ -46,13 +46,13 @@
 						<span class="to-the-top-long">
 							<?php
 							/* translators: %s: HTML character for up arrow. */
-							printf( __( 'To the top %s', 'twentytwenty' ), '<span class="arrow" aria-hidden="true">&uarr;</span>' );
+							printf( __( 'To the top %s', 'devstarter' ), '<span class="arrow" aria-hidden="true">&uarr;</span>' );
 							?>
 						</span><!-- .to-the-top-long -->
 						<span class="to-the-top-short">
 							<?php
 							/* translators: %s: HTML character for up arrow. */
-							printf( __( 'Up %s', 'twentytwenty' ), '<span class="arrow" aria-hidden="true">&uarr;</span>' );
+							printf( __( 'Up %s', 'devstarter' ), '<span class="arrow" aria-hidden="true">&uarr;</span>' );
 							?>
 						</span><!-- .to-the-top-short -->
 					</a><!-- .to-the-top -->

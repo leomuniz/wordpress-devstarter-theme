@@ -3,12 +3,12 @@
  * Displays the search icon and modal
  *
  * @package WordPress
- * @subpackage Twenty_Twenty
- * @since Twenty Twenty 1.0
+ * @subpackage Dev_Starter
+ * @since Dev Starter 1.0
  */
 
 ?>
-<div class="search-modal cover-modal header-footer-group" data-modal-target-string=".search-modal" role="dialog" aria-modal="true" aria-label="<?php esc_attr_e( 'Search', 'twentytwenty' ); ?>">
+<div class="search-modal cover-modal header-footer-group" data-modal-target-string=".search-modal" role="dialog" aria-modal="true" aria-label="<?php esc_attr_e( 'Search', 'devstarter' ); ?>">
 
 	<div class="search-modal-inner modal-inner">
 
@@ -17,7 +17,7 @@
 			<?php
 			get_search_form(
 				array(
-					'aria_label' => __( 'Search for:', 'twentytwenty' ),
+					'aria_label' => __( 'Search for:', 'devstarter' ),
 				)
 			);
 			?>
@@ -26,10 +26,10 @@
 				<span class="screen-reader-text">
 					<?php
 					/* translators: Hidden accessibility text. */
-					_e( 'Close search', 'twentytwenty' );
+					_e( 'Close search', 'devstarter' );
 					?>
 				</span>
-				<?php twentytwenty_the_theme_svg( 'cross' ); ?>
+				<?php devstarter_the_theme_svg( 'cross' ); ?>
 			</button><!-- .search-toggle -->
 
 		</div><!-- .section-inner -->

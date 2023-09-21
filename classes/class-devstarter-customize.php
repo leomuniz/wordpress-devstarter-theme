@@ -3,22 +3,22 @@
  * Customizer settings for this theme.
  *
  * @package WordPress
- * @subpackage Twenty_Twenty
- * @since Twenty Twenty 1.0
+ * @subpackage Dev_Starter
+ * @since Dev Starter 1.0
  */
 
-if ( ! class_exists( 'TwentyTwenty_Customize' ) ) {
+if ( ! class_exists( 'DevStarter_Customize' ) ) {
 	/**
 	 * CUSTOMIZER SETTINGS
 	 *
-	 * @since Twenty Twenty 1.0
+	 * @since Dev Starter 1.0
 	 */
-	class TwentyTwenty_Customize {
+	class DevStarter_Customize {
 
 		/**
 		 * Register customizer options.
 		 *
-		 * @since Twenty Twenty 1.0
+		 * @since Dev Starter 1.0
 		 *
 		 * @param WP_Customize_Manager $wp_customize Theme Customizer object.
 		 */
@@ -56,7 +56,7 @@ if ( ! class_exists( 'TwentyTwenty_Customize' ) ) {
 					'selector'            => '.header-titles [class*=site-]:not(.site-description)',
 					'container_inclusive' => true,
 					'render_callback'     => function () {
-						twentytwenty_site_logo();
+						devstarter_site_logo();
 					},
 				)
 			);
@@ -65,7 +65,7 @@ if ( ! class_exists( 'TwentyTwenty_Customize' ) ) {
 				'retina_logo',
 				array(
 					'selector'        => '.header-titles [class*=site-]:not(.site-description)',
-					'render_callback' => 'twentytwenty_customize_partial_site_logo',
+					'render_callback' => 'devstarter_customize_partial_site_logo',
 				)
 			);
 
@@ -89,8 +89,8 @@ if ( ! class_exists( 'TwentyTwenty_Customize' ) ) {
 					'type'        => 'checkbox',
 					'section'     => 'title_tagline',
 					'priority'    => 10,
-					'label'       => __( 'Retina logo', 'twentytwenty' ),
-					'description' => __( 'Scales the logo to half its uploaded size, making it sharp on high-res screens.', 'twentytwenty' ),
+					'label'       => __( 'Retina logo', 'devstarter' ),
+					'description' => __( 'Scales the logo to half its uploaded size, making it sharp on high-res screens.', 'devstarter' ),
 				)
 			);
 
@@ -101,7 +101,7 @@ if ( ! class_exists( 'TwentyTwenty_Customize' ) ) {
 			$wp_customize->add_section(
 				'options',
 				array(
-					'title'      => __( 'Theme Options', 'twentytwenty' ),
+					'title'      => __( 'Theme Options', 'devstarter' ),
 					'priority'   => 40,
 					'capability' => 'edit_theme_options',
 				)
@@ -124,10 +124,10 @@ if ( ! class_exists( 'TwentyTwenty_Customize' ) ) {
 					'type'     => 'radio',
 					'section'  => 'options',
 					'priority' => 10,
-					'label'    => __( 'On archive pages, posts show:', 'twentytwenty' ),
+					'label'    => __( 'On archive pages, posts show:', 'devstarter' ),
 					'choices'  => array(
-						'full'    => __( 'Full text', 'twentytwenty' ),
-						'summary' => __( 'Summary', 'twentytwenty' ),
+						'full'    => __( 'Full text', 'devstarter' ),
+						'summary' => __( 'Summary', 'devstarter' ),
 					),
 				)
 			);
@@ -154,7 +154,7 @@ if ( ! class_exists( 'TwentyTwenty_Customize' ) ) {
 		/**
 		 * Sanitize select.
 		 *
-		 * @since Twenty Twenty 1.0
+		 * @since Dev Starter 1.0
 		 *
 		 * @param string $input   The input from the setting.
 		 * @param object $setting The selected setting.
@@ -169,7 +169,7 @@ if ( ! class_exists( 'TwentyTwenty_Customize' ) ) {
 		/**
 		 * Sanitize boolean for checkbox.
 		 *
-		 * @since Twenty Twenty 1.0
+		 * @since Dev Starter 1.0
 		 *
 		 * @param bool $checked Whether or not a box is checked.
 		 * @return bool
@@ -196,11 +196,11 @@ if ( ! class_exists( 'TwentyTwenty_Customize' ) ) {
 
 	// Hooks
 	// Setup the Theme Customizer settings and controls.
-	add_action( 'customize_register', array( 'TwentyTwenty_Customize', 'register' ) );
+	add_action( 'customize_register', array( 'DevStarter_Customize', 'register' ) );
 
 	// Maybe hide the Customize submenu (and also the Background color menu).
-	add_filter( 'admin_body_class', array( 'TwentyTwenty_Customize', 'maybe_hide_customizer' ), 1 );
+	add_filter( 'admin_body_class', array( 'DevStarter_Customize', 'maybe_hide_customizer' ), 1 );
 
 	// Maybe hide the Theme Editor submenu.
-	add_action( 'admin_menu', array( 'TwentyTwenty_Customize', 'maybe_hide_theme_editor' ), 999 );
+	add_action( 'admin_menu', array( 'DevStarter_Customize', 'maybe_hide_theme_editor' ), 999 );
 }

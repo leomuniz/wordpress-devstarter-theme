@@ -10,8 +10,8 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package WordPress
- * @subpackage Twenty_Twenty
- * @since Twenty Twenty 1.0
+ * @subpackage Dev_Starter
+ * @since Dev Starter 1.0
  */
 
 get_header();
@@ -32,7 +32,7 @@ get_header();
 
 		$archive_title = sprintf(
 			'%1$s %2$s',
-			'<span class="color-accent">' . __( 'Search:', 'twentytwenty' ) . '</span>',
+			'<span class="color-accent">' . __( 'Search:', 'devstarter' ) . '</span>',
 			'&ldquo;' . get_search_query() . '&rdquo;'
 		);
 
@@ -43,15 +43,15 @@ get_header();
 					'We found %s result for your search.',
 					'We found %s results for your search.',
 					$wp_query->found_posts,
-					'twentytwenty'
+					'devstarter'
 				),
 				number_format_i18n( $wp_query->found_posts )
 			);
 		} else {
-			$archive_subtitle = __( 'We could not find any results for your search. You can give it another try through the search form below.', 'twentytwenty' );
+			$archive_subtitle = __( 'We could not find any results for your search. You can give it another try through the search form below.', 'devstarter' );
 		}
 	} elseif ( is_archive() && ! have_posts() ) {
-		$archive_title = __( 'Nothing Found', 'twentytwenty' );
+		$archive_title = __( 'Nothing Found', 'devstarter' );
 	} elseif ( ! is_home() ) {
 		$archive_title    = get_the_archive_title();
 		$archive_subtitle = get_the_archive_description();
@@ -101,7 +101,7 @@ get_header();
 			<?php
 			get_search_form(
 				array(
-					'aria_label' => __( 'search again', 'twentytwenty' ),
+					'aria_label' => __( 'search again', 'devstarter' ),
 				)
 			);
 			?>

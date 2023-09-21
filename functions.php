@@ -1,10 +1,10 @@
 <?php
 /**
- * Twenty Twenty functions and definitions
+ * Dev Starter functions and definitions
  *
  * @package WordPress
- * @subpackage Twenty_Twenty
- * @since Twenty Twenty 1.0
+ * @subpackage Dev_Starter
+ * @since Dev Starter 1.0
  */
 
 // ********************
@@ -48,20 +48,20 @@ require get_template_directory() . '/inc/theme-support.php';
 require get_template_directory() . '/inc/template-tags.php';
 
 // Handle SVG icons.
-require get_template_directory() . '/classes/class-twentytwenty-svg-icons.php';
+require get_template_directory() . '/classes/class-devstarter-svg-icons.php';
 require get_template_directory() . '/inc/svg-icons.php';
 
 // Handle Customizer settings.
-require get_template_directory() . '/classes/class-twentytwenty-customize.php';
+require get_template_directory() . '/classes/class-devstarter-customize.php';
 
 // Custom comment walker.
-require get_template_directory() . '/classes/class-twentytwenty-walker-comment.php';
+require get_template_directory() . '/classes/class-devstarter-walker-comment.php';
 
 // Custom page walker.
-require get_template_directory() . '/classes/class-twentytwenty-walker-page.php';
+require get_template_directory() . '/classes/class-devstarter-walker-page.php';
 
 // Custom script loader class.
-require get_template_directory() . '/classes/class-twentytwenty-script-loader.php';
+require get_template_directory() . '/classes/class-devstarter-script-loader.php';
 
 // Block Patterns.
 require get_template_directory() . '/inc/block-patterns.php';

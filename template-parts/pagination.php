@@ -1,12 +1,12 @@
 <?php
 /**
- * A template partial to output pagination for the Twenty Twenty default theme.
+ * A template partial to output pagination for the Dev Starter default theme.
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package WordPress
- * @subpackage Twenty_Twenty
- * @since Twenty Twenty 1.0
+ * @subpackage Dev_Starter
+ * @since Dev Starter 1.0
  */
 
 $prev_text = sprintf(
@@ -16,7 +16,7 @@ $prev_text = sprintf(
 	 * Translators: This text contains HTML to allow the text to be shorter on small screens.
 	 * The text inside the span with the class nav-short will be hidden on small screens.
 	 */
-	__( 'Newer <span class="nav-short">Posts</span>', 'twentytwenty' )
+	__( 'Newer <span class="nav-short">Posts</span>', 'devstarter' )
 );
 $next_text = sprintf(
 	'<span class="nav-next-text">%s</span> %s',
@@ -24,7 +24,7 @@ $next_text = sprintf(
 	 * Translators: This text contains HTML to allow the text to be shorter on small screens.
 	 * The text inside the span with the class nav-short will be hidden on small screens.
 	 */
-	__( 'Older <span class="nav-short">Posts</span>', 'twentytwenty' ),
+	__( 'Older <span class="nav-short">Posts</span>', 'devstarter' ),
 	'<span aria-hidden="true">&rarr;</span>'
 );
 

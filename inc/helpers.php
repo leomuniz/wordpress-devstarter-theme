@@ -3,19 +3,19 @@
  * Helpers functions.
  *
  * @package WordPress
- * @subpackage Twenty_Twenty
- * @since Twenty Twenty 1.0
+ * @subpackage Dev_Starter
+ * @since Dev Starter 1.0
  */
 
  /**
  * Get the information about the logo.
  *
- * @since Twenty Twenty 1.0
+ * @since Dev Starter 1.0
  *
  * @param string $html The HTML output from get_custom_logo (core function).
  * @return string
  */
-function twentytwenty_get_custom_logo( $html ) {
+function devstarter_get_custom_logo( $html ) {
 
 	$logo_id = get_theme_mod( 'custom_logo' );
 
@@ -63,4 +63,4 @@ function twentytwenty_get_custom_logo( $html ) {
 
 }
 
-add_filter( 'get_custom_logo', 'twentytwenty_get_custom_logo' );
+add_filter( 'get_custom_logo', 'devstarter_get_custom_logo' );
