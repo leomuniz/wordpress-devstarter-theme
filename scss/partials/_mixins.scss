@@ -1,0 +1,30 @@
+// Gradient mixin
+@mixin gradient( $starting_from, $list... ) { 
+    background: -webkit-linear-gradient( $starting_from, $list );
+    background: -moz-linear-gradient( $starting_from, $list );
+    background: -o-linear-gradient( $starting_from, $list );
+    background: linear-gradient( $starting_from, $list );  
+}
+
+// Media queries
+@mixin for-phone-only {
+    @media (max-width: 599px) { @content; }
+  }
+@mixin for-tablet-portrait-up {
+    @media (min-width: 600px) { @content; }
+}
+@mixin for-tablet-portrait-only {
+    @media (min-width: 600px) and (max-width: 899px) { @content; }
+}
+@mixin for-tablet-portrait-down {
+    @media (max-width: 899px) { @content; }
+}
+@mixin for-tablet-landscape-up {
+    @media (min-width: 900px) { @content; }
+}
+@mixin for-desktop-up {
+    @media (min-width: 1200px) { @content; }
+}
+@mixin for-big-desktop-up {
+    @media (min-width: 1800px) { @content; }
+}

@@ -1,0 +1,141 @@
+#site-header {
+	border-bottom: 1px solid #ddd;
+
+	.header-inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap; // for mobile menu.
+		margin-inline: auto;
+
+		.header-titles-wrapper {
+			padding:20px;
+		}
+
+		.header-navigation-mobile-menu-toggle {
+			display:none; 
+			padding: 20px;
+
+			@include for-phone-only {
+				display:block;
+			}
+		}
+
+		.header-navigation-wrapper {
+			padding:20px;
+
+			@include for-phone-only {
+				flex-basis:100%;
+				padding:0px;
+			}
+		}
+
+		nav.primary-menu-wrapper {
+			@include for-phone-only {
+				display:none;
+			}
+		
+			ul li {
+				position:relative;
+				display: inline-block;
+				margin-inline: 10px;
+
+				@include for-phone-only {
+					display:flex;
+					flex-wrap: wrap;
+					margin-inline: 0px;
+					border-top: 1px solid #ccc;
+
+					a {
+						display:block;
+						padding: 20px;
+					}
+				}
+
+				a {
+					text-decoration:none;
+					flex-grow: 1;
+				}
+
+				.chevron-down-mobile-submenu {
+					display:none;
+
+					svg {
+						width:16px;
+					}
+				
+					@include for-phone-only {
+						display:inline-block;
+						padding:20px;
+					}
+				}
+
+				.submenu-checkbox-for-mobile {
+					display:none;
+
+					&:checked + ul.sub-menu {
+						display:block;
+						flex-basis:100%;
+					}
+				}
+
+				ul.sub-menu {
+					position:absolute;
+					top: 0px;
+					margin-top: 20px; 
+					padding-top:10px;
+					display:none;
+
+					li {
+						position: relative;
+						border: 1px solid $gray80;
+						background-color: $off-white;
+						margin-inline:0px;
+						width:150px;
+
+						@include for-phone-only {
+							padding:10px;
+							padding-left:30px;
+							width:auto;
+						}
+
+						a {
+							padding: 10px 20px;
+							display: inline-block;
+						}
+					}
+
+					@include for-phone-only {
+						position:relative;
+						padding-top:0px;
+					}	
+				}
+
+				&:hover ul.sub-menu {
+					display:block;
+
+					@include for-phone-only {
+						display:none;
+					}
+				}
+			}
+		}
+
+		.toggle-mobile-menu {
+			cursor: pointer;
+			display:none;
+			
+			@include for-phone-only {
+				display:block;
+			}
+		}
+
+		[id^=mobile-toggle] {
+			display:none;
+		
+			&:checked + nav.primary-menu-wrapper {
+				display: block;
+			}
+		}
+	}
+}

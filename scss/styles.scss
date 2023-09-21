@@ -1,0 +1,60 @@
+@import 'partials/reset';
+@import 'partials/mixins';
+@import 'partials/variables';
+
+html { 
+	scroll-behavior: smooth;
+
+	// Reduces font-size according to the screen size by using rem unit in the CSS rules.
+	font-size:62.5%;
+
+	@include for-tablet-portrait-up {
+		font-size:75%;
+	}
+
+	@include for-tablet-landscape-up {
+		font-size:87.5%;
+	}
+}
+
+body {
+	background-color: $background-color;
+	font-size:1.6rem;
+	line-height:1.5;
+	font-family: $sans-serif;
+}
+
+* {
+	color: $primary;
+}
+
+img,
+picture,
+svg { 
+	max-width: 100%;
+	display: inline-block;
+}
+
+.container, .section-inner, .alignwide, .entry-content { 
+	max-width: $max-site-width;
+	margin-inline: auto !important;
+}
+
+h1 { 
+	font-size: 3.6rem;
+	margin:80px 0px;
+}
+
+h2 {
+	font-size:2.4rem;
+	margin:60px 0px;
+}
+
+h3 {
+	font-size:1.8rem;
+	margin-top:20px;
+}
+
+@import 'partials/header';
+@import 'partials/content';
+@import 'partials/footer';
