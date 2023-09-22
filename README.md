@@ -3,6 +3,7 @@ This theme was made from the Twenty Twenty official WP theme by the WordPress te
 
 ## Quick-start
 - Define basic settings on the `functions.php`
+- Run `npm install` to install the dependencies
 - Run `gulp watch` on the theme root folder. 
 - Define layout settings on `/scss/partials/_variables.scss`.
 
