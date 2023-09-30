@@ -10,7 +10,7 @@ This theme was made from the Twenty Twenty official WP theme by the WordPress te
 ## Features
 - CSS-only responsive menu.
 - `gulpfile.js` configured to generate CSS files from SCSS and to minify both CSS and JS files.
-- Production minified files.
+- Production minified files delivered according to the `WP_ENVIRONMENT_TYPE` global system variable.
 - Basic [JavaScript starter template](https://gist.github.com/leomuniz/6da03e6a173a2a6f14d2b63eadf2bc9d) for WordPress with jQuery.
 - Custom basic theme settings on functions.php (hide customizer, hide theme editor...).
 - Basic SCSS variables to customize the layout.
@@ -37,7 +37,7 @@ If you need customize the way the files are enqueued, just edit the `/inc/enqueu
 
 ## Custom basic theme settings on functions.php
 Go to functions.php and define some basic settings of your theme:
-- Classic Editor (boolean) - currently now working 
+- Classic Editor (boolean) - currently not working 
 - Hide Customizer (boolean)
 - Hide Theme Editor (boolean)
 - Display the site description below the title (boolean)
