@@ -78,17 +78,17 @@ class Walker_SubMenu_Modifier extends Walker_Nav_Menu {
 		 */
 		$atts       = apply_filters( 'nav_menu_submenu_attributes', $atts, $args, $depth );
 		$attributes = $this->build_atts( $atts );
-	
+
 		$output .= "{$n}{$indent}<label class=\"chevron-down-mobile-submenu\" for=\"check-sub-" . $this->current_item->ID . "\">" . DevStarter_SVG_Icons::get_svg( 'chevron-down' ) . "</label>";
 		$output .= "{$n}{$indent}<input type=\"checkbox\" id=\"check-sub-" . $this->current_item->ID . "\" class=\"submenu-checkbox-for-mobile\">";
 		$output .= "{$n}{$indent}<ul{$attributes}>{$n}";
-		
+
 	}
 
 
-	function start_el( &$output, $item, $depth=0, $args = NULL, $current_object_id = 0 ) {
-	
-		parent::start_el( $output,$item,$depth,$args,$id );
+	function start_el( &$output, $item, $depth = 0, $args = null, $current_object_id = 0 ) {
+
+		parent::start_el( $output, $item, $depth, $args, $current_object_id );
 		$this->current_item = $item;
 	}
 }
